@@ -1,0 +1,14 @@
+sd=sd1,lun=/dev/sdb,openflag=o_direct
+sd=sd2,lun=/dev/sdc,openflag=o_direct
+sd=sd3,lun=/dev/sdd,openflag=o_direct
+sd=sd4,lun=/dev/sde,openflag=o_direct
+sd=sd5,lun=/dev/sdf,openflag=o_direct
+sd=sd6,lun=/dev/sdh,openflag=o_direct
+sd=sd7,lun=/dev/sdh,openflag=o_direct
+sd=sd8,lun=/dev/sdi,openflag=o_direct
+sd=sd9,lun=/dev/sdj,openflag=o_direct
+sd=sd10,lun=/dev/sdk,openflag=o_direct
+sd=sd11,lun=/dev/sdl,openflag=o_direct
+sd=sd12,lun=/dev/sdm,openflag=o_direct
+wd=wd1,sd=(sd1,sd2,sd3,sd4,sd5,sd6,sd7,sd8,sd9,sd10,sd11,sd12),xfersize=32K,rdpct=80,seekpct=20
+rd=rd1,wd=wd1,iorate=max,elapsed=10,interval=1,threads=16
